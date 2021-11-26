@@ -40,7 +40,7 @@ function gameEngine() {
     }
 
     if (snakeArr[0].x === food.x && snakeArr[0].y === food.y) {
-        snakeArr.unshift({ x: snakeArr[0].x + direction.x, y: snakeArr[0].y + direction.x });
+        snakeArr.unshift({ x: snakeArr[0].x + direction.x, y: snakeArr[0].y + direction.y });
         score += 1;
         if (score > highScoreVal) {
             highScoreVal = score;
